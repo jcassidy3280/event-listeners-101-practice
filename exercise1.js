@@ -8,3 +8,9 @@
     // Note: Think back on Elle's lecture on state... What state data are we managing in this game? That information may inform what global variables you will need to create...
 
 // If you've done everything correctly, when you click on the button, you should see the total clicks counter increase. 
+
+let buttonElement = document.getElementById("the-button")
+let clickCounterId= document.getElementById("your-total-clicks")
+buttonElement.addEventListener('click', () => {
+    clickCounterId.innerText = Number(clickCounterId.innerText) + 1
+})
